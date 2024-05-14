@@ -1,0 +1,4 @@
+sap.m.MessageToast.show("New section created");
+HBox4.setBlocked(false);
+App.setBusy(false);
+apiRestAPIGetInteractives();

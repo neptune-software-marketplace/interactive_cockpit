@@ -1,0 +1,107 @@
+{
+	"id": "be4f3c79-9c05-ef11-aaf0-000d3ab82dc5",
+	"createdAt": "2024-04-28T20:18:28.893Z",
+	"createdBy": "kaan.koska@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/interactive_cockpit"
+	},
+	"name": "neptunesoftware-dxp-abb-interactive_cockpit",
+	"description": null,
+	"ver": "24.05.14.1133",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "dfd3e55e-9c05-ef11-aaf0-000d3ab82dc5",
+			"application": "interactive_cockpit_draw_sections_app",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "BE4F3C79-9C05-EF11-AAF0-000D3AB82DC5"
+			}
+		},
+		{
+			"id": "702371b2-a205-ef11-aaf0-000d3ab82dc5",
+			"application": "interactive_cockpit",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "BE4F3C79-9C05-EF11-AAF0-000D3AB82DC5"
+			}
+		}
+	],
+	"api": [
+		{
+			"id": "cfce8935-ea06-ef11-aaf0-000d3ab82dc5",
+			"name": "Interactive_sections",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "346057e3-9c05-ef11-aaf0-000d3ab82dc5",
+			"name": " interactive_cockpit_sections",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "9be167d8-e906-ef11-aaf0-000d3ab82dc5",
+			"name": "interactive_sections",
+			"description": null
+		},
+		{
+			"id": "941cf3aa-9c05-ef11-aaf0-000d3ab82dc5",
+			"name": "interactive_cockpit_sections",
+			"description": null
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "655c7cd9-f705-ef11-aaf0-000d3ab82dc5",
+			"description": null,
+			"name": "Interactive Cockpit Admin"
+		},
+		{
+			"id": "3b68213f-f805-ef11-aaf0-000d3ab82dc5",
+			"description": null,
+			"name": "Interactive Cockpit"
+		}
+	],
+	"category": [
+		{
+			"id": "cec999b8-f705-ef11-aaf0-000d3ab82dc5",
+			"description": null,
+			"name": "Interactive Cockpit"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "d96694ae-f705-ef11-aaf0-000d3ab82dc5",
+			"name": "INTERACTIVE COCKPIT",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

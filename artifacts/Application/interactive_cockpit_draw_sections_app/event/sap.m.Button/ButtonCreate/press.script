@@ -1,0 +1,40 @@
+if(Input.getValue() === ""){
+    sap.m.MessageToast.show("Title can not be empty!");
+    return;
+}
+if(FileUploader.getValue() === ""){
+    sap.m.MessageToast.show("Image can not be empty!");
+    return;
+}
+var id = generateUUID();
+TextMainSectionID.setText(id);
+
+var canvas = document.getElementById('myCanvas');
+if (canvas) {
+    var imageDataUrl = canvas.toDataURL('image/png');  // Gets the entire canvas as a PNG image.
+} else {
+    sap.m.MessageToast.show("Canvas not found!");
+}
+App.setBusy(true);
+var title = Input.getValue();
+var options = {
+    data: {
+        "Title": title,
+        "Image_URL": imageDataUrl,
+        "UUID": id
+    }
+};
+apiRestAPISaveInteractives(options);
+
+
+URL = imageDataUrl;
+BackgroundImage.src = URL;
+Ctx.clearRect(0, 0, Canvas.width, Canvas.height);
+Ctx.drawImage(BackgroundImage, 0, 0, Canvas.width, Canvas.height);
+
+Rectangles = [];
+var response = [];
+initializeRectanglesFromResponse(response);
+
+
+

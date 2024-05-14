@@ -1,0 +1,2 @@
+var response = xhr.responseJSON;
+

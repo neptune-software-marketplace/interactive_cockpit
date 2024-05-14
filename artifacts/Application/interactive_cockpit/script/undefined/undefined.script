@@ -1,0 +1,39 @@
+.infoAdded {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.4);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.noinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 255, 0.4);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.TextRemainingHours {
+  color: red;
+  font-weight: bold;
+}
+
+.Page {
+  background-color: white;
+}

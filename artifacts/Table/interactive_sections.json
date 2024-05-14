@@ -1,0 +1,38 @@
+{
+	"id": "9be167d8-e906-ef11-aaf0-000d3ab82dc5",
+	"createdAt": "2024-04-30T12:04:53.040Z",
+	"createdBy": "kaan.koska@neptune-software.com",
+	"fields": [
+		{
+			"id": "d6616c71-760a-4b61-f499-3549de34f761",
+			"fieldName": "Title",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "1b5526b1-0cf3-49b6-c4fc-55d1f4781894",
+			"fieldName": "Image_URL",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "487df1db-6826-4c49-d0e0-ca45e3b985e8",
+			"fieldName": "UUID",
+			"fieldType": "uuid",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "interactive_sections",
+	"description": null,
+	"ver": "24.04.30.1213",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "be4f3c79-9c05-ef11-aaf0-000d3ab82dc5",
+	"rolesRead": [],
+	"rolesWrite": []
+}

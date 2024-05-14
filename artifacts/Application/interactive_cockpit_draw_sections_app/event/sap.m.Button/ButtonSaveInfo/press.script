@@ -1,0 +1,22 @@
+BusyDialog.open();
+if (EDI) {
+    var data = EDI.getData();
+} else {
+    console.log("Editor is not initialized.");
+}
+var id = TextID.getText();
+var options = {
+    parameters: {
+        where: JSON.stringify({ sectionID: id }),
+    },
+    data: {
+        class: "infoAdded",
+        title: InputTitle.getValue(),
+        data: data
+    },
+};
+apiRestAPIUpdateSections(options);
+sap.m.MessageToast.show("Info added");
+DialogAddInfo.close();
+InputTitle.setValue();
+TextID.setText("");

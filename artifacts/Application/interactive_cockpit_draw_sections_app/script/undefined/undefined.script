@@ -1,0 +1,61 @@
+@charset "UTF-8";
+#container {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.ck-editor__editable[role=textbox] {
+  min-height: 500px;
+}
+
+.ck-content .image {
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -120px;
+}
+
+canvas {
+  margin-top: 160px;
+  border: 1px solid #ddd;
+}
+
+.ınfoAdded {
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.4);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.noInfo {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.4);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}

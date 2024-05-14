@@ -1,0 +1,12 @@
+App.to(Page1);
+URL = "";
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var backgroundImage = new Image();
+backgroundImage.src = URL;
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+AddInfoMode = false;
+DeleteMode = false;
+DrawMode = false;
+canvas.style.cursor = "pointer";

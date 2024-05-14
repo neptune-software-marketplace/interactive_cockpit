@@ -1,0 +1,94 @@
+{
+	"id": "941cf3aa-9c05-ef11-aaf0-000d3ab82dc5",
+	"createdAt": "2024-04-28T20:19:55.903Z",
+	"createdBy": "kaan.koska@neptune-software.com",
+	"fields": [
+		{
+			"id": "7705d825-89a2-4a59-9d30-7ebf96d0fa5b",
+			"fieldName": "sectionID",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "9bad1ea4-1db5-4147-f302-57eb030c17d4",
+			"fieldName": "class",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "d83b9207-1fd4-407d-884f-04d657a45982",
+			"fieldName": "title",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "31204043-1651-4727-8506-570e27624279",
+			"fieldName": "startX",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "82671a8c-8d42-49fc-a563-95d1ca282a35",
+			"fieldName": "startY",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "05469a07-06fd-4d30-d44a-0d44f316a426",
+			"fieldName": "endX",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "4d5b8e45-8150-4d62-e67e-c4526bd94e2f",
+			"fieldName": "endY",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "5e07c118-f44b-4c6e-b299-56a28bf6c946",
+			"fieldName": "image_id",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "d31bf67d-aa9a-407d-8a6d-7b541508eb68",
+			"fieldName": "URL",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "08fd9cb1-404c-465e-dbf7-6043b1f409a2",
+			"fieldName": "belongsTo",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "89a2450f-1963-42df-ac01-40e7e062238d",
+			"fieldName": "data",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "interactive_cockpit_sections",
+	"description": null,
+	"ver": "24.05.08.1231",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "be4f3c79-9c05-ef11-aaf0-000d3ab82dc5",
+	"rolesRead": [],
+	"rolesWrite": []
+}

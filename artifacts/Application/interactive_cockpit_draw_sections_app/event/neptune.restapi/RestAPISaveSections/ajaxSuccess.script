@@ -1,0 +1,9 @@
+var id = TextMainSectionID.getText();
+var options = {
+    parameters: {
+        "where": JSON.stringify({"belongsTo":id})
+    }
+};
+apiRestAPIGetSections(options);
+Page.setBusy(false);
+sap.m.MessageToast.show("Section created");
