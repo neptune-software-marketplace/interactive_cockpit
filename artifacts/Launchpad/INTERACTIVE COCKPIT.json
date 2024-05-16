@@ -10,7 +10,7 @@
 	"layout": [],
 	"config": {
 		"cookieDialogTitle": "Interactive Cockpit",
-		"cookieDialogEnabled": false,
+		"cookieDialogEnabled": true,
 		"enhancement": "",
 		"showAccessibilityFocusIndicator": true,
 		"verticalMenu": false,
@@ -74,7 +74,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "24.05.16.1633",
+	"ver": "24.05.14.1103",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,

@@ -53,3 +53,4 @@ var elements1 = document.getElementsByClassName("selected-area");
 for (var i = 0; i < elements1.length; i++) {
     elements1[i].addEventListener("click", functionToCall);
 }
+App.setBusy(false);

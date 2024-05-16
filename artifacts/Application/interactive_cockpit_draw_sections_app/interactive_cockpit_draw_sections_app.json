@@ -704,6 +704,20 @@
 																	"response": [],
 																	"attributes": [
 																		{
+																			"attribute": "multiple",
+																			"grouping": "Properties",
+																			"value": "false",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "fileType",
+																			"grouping": "Properties",
+																			"value": "[\"jpg\", \"png\"]",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
 																			"attribute": "change",
 																			"grouping": "Events",
 																			"value": "Anonymous Function",
@@ -1313,6 +1327,28 @@
 					"attributes": [],
 					"data": [
 						{
+							"fieldNo": "f5ae9511-047c-4118-a786-ea101bb43910",
+							"fieldName": "RestAPIDeleteInteractives",
+							"fieldParent": "a9276193-f3e2-4c73-ee14-e870fa14e893",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "cfce8935-ea06-ef11-aaf0-000d3ab82dc5",
+							"restOperation": "e55c8610-ca31-4921-bbb0-9708564ce51b",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/RestAPIDeleteInteractives/ajaxSuccess.script",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
 							"fieldNo": "d7c6cc31-74d7-4e7c-c60f-89a6aa7658ca",
 							"fieldName": "RestAPIGetSectionsDetails",
 							"fieldParent": "a9276193-f3e2-4c73-ee14-e870fa14e893",
@@ -1538,7 +1574,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.05.14.1108",
+	"ver": "24.05.16.1608",
 	"application": "interactive_cockpit_draw_sections_app",
 	"title": "",
 	"description": "",

@@ -1,19 +1,4 @@
 var EDI;
-var id = "F59ED4F3-B243-40F3-BAB4-77D9591D9D4A";
-var options = {
-    parameters: {
-        "where": JSON.stringify({"UUID": id})
-    }
-};
-apiRestAPIGetInteractives(options);
-
-var options = {
-    parameters: {
-        "where": JSON.stringify({"belongsTo": id})
-    }
-};
-
-apiRestAPIGetSections(options);
 create_editor()
 
 function create_editor() {
