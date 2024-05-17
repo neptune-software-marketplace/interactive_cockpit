@@ -1,8 +1,9 @@
 var EDI;
-create_editor()
+var Create = false;
 
 function create_editor() {
-    CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
+    
+    CKEDITOR.ClassicEditor.create(document.getElementById("editor1"), {
         toolbar: {
             items: [
                 // "exportPDF",
@@ -179,12 +180,14 @@ function create_editor() {
             "CaseChange",
         ],
         readOnly: true // Set editor to read-only mode
-    }).then((editor) => {
-        EDI = editor;
+    }).then((editor1) => {
+        EDI = editor1;
         // Set contenteditable attribute to false
-        const editableElement = editor.editing.view.document.getRoot();
-        editor.editing.view.change((writer) => {
+        const editableElement = editor1.editing.view.document.getRoot();
+        editor1.editing.view.change((writer) => {
             writer.setAttribute('contenteditable', 'false', editableElement);
         });
     });
 }
+
+create_editor()

@@ -40,10 +40,17 @@ function functionToCall(event) {
     console.log(id);
     var options = {
         parameters: {
-            where: JSON.stringify({"sectionID": id})
+            where: JSON.stringify({ sectionID: id }),
         },
     };
     apiRestAPIGetInteractivesInfo(options);
+    
+    var activeElements = document.querySelectorAll('a.infoAdded, a.selected-area');
+    activeElements.forEach(function(element) {
+        element.style.border = ''; 
+    });
+
+    event.target.style.border = '4px solid black';
 }
 var elements = document.getElementsByClassName("infoAdded");
 for (var i = 0; i < elements.length; i++) {

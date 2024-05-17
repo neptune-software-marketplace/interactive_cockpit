@@ -1,7 +1,6 @@
 @charset "UTF-8";
 #container {
   width: 1000px;
-  margin: 20px auto;
 }
 
 .ck-editor__editable[role=textbox] {
@@ -26,11 +25,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: -120px;
 }
 
 canvas {
-  margin-top: 160px;
   border: 1px solid #ddd;
 }
 

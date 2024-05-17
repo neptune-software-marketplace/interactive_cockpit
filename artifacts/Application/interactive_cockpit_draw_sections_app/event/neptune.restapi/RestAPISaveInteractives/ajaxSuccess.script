@@ -1,4 +1,9 @@
 sap.m.MessageToast.show("New section created");
 HBox4.setBlocked(false);
+HBox3.setVisible(false);
+TitleHeader.setVisible(false);
+TitleName.setVisible(true);
+var title = Input.getValue();
+TitleName.setText(title);
 App.setBusy(false);
 apiRestAPIGetInteractives();

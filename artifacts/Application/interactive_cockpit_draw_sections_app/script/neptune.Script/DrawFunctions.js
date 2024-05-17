@@ -63,7 +63,8 @@ Canvas.addEventListener("click", function (event) {
                     onClose: function (sAction) {
                         if (sAction === sap.m.MessageBox.Action.YES) {
                             Rectangles.splice(i, 1);
-                            redrawRectangles();
+                            //redrawRectangles();
+                            Page.setBusy(true);
                             var secid = rect.sectionID;
                             var options = {
                                 parameters: {
@@ -86,9 +87,7 @@ Canvas.addEventListener("click", function (event) {
                 };
                 apiRestAPIGetSectionsDetails(options);
                 DialogAddInfo.open();
-                if (EDI === "") {
-                    // create_editor();
-                }
+               
             }
         }
     }
@@ -124,7 +123,7 @@ Canvas.addEventListener("mousedown", function (event) {
             );
             return;
         }
-        Rectangles.push(rectangle);
+        //Rectangles.push(rectangle);
         Page.setBusy(true);
         var id = generateUUID();
         TextID.setText(id);
@@ -142,7 +141,7 @@ Canvas.addEventListener("mousedown", function (event) {
             },
         };
         apiRestAPISaveSections(options1);
-        redrawRectangles();
+        //redrawRectangles();
     }
 
     Canvas.addEventListener("mousemove", moveListener);

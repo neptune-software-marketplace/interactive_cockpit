@@ -4,7 +4,18 @@ var EDI;
 var AddInfoMode = false;
 var DeleteMode = false;
 var DrawMode = false;
-create_editor();
+
+sap.ui.getCore().attachInit(function (startParams) {
+    setTimeout(function () {
+        for (var i in CKEDITOR.instances) {
+            if (CKEDITOR.instances[i].focusManager.hasFocus) {
+                CKEDITOR.instances[i].destroy();
+                break;
+            }
+        }
+        create_editor();
+    }, 200);
+});
 
 function generateUUID() {
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {

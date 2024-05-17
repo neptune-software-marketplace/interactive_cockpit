@@ -1,6 +1,6 @@
 .infoAdded {
   position: absolute;
-  background-color: rgba(255, 0, 0, 0.5); 
+  background-color: rgba(0, 255, 0, 0.5); 
   z-index: 1; 
   cursor: pointer; 
   display: flex;
@@ -12,7 +12,7 @@
 }
 .noinfo {
   position: absolute;
-  background-color: rgba(0, 0, 255, 0.5); 
+  background-color: rgba(255, 0, 0, 0.5); 
   z-index: 1; 
   cursor: pointer; 
   display: flex;

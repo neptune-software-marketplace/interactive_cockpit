@@ -10,3 +10,6 @@ AddInfoMode = false;
 DeleteMode = false;
 DrawMode = false;
 canvas.style.cursor = "pointer";
+Input.setValue();
+FileUploader.setValue();
+TitleHeader.setVisible(false);

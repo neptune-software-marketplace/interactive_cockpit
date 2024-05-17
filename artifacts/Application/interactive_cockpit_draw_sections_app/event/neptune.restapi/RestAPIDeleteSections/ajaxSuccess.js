@@ -1,3 +1,4 @@
+sap.m.MessageToast.show("Deleted!");
 var id = TextMainSectionID.getText();
 var options = {
     parameters: {
@@ -6,6 +7,3 @@ var options = {
 };
 apiRestAPIGetSections(options);
 Page.setBusy(false);
-sap.m.MessageToast.show("Details Added");
-var data = "";
-EDI.setData(data);

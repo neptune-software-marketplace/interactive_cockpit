@@ -396,6 +396,75 @@
 									]
 								}
 							]
+						},
+						{
+							"fieldNo": "c24b2245-b1c5-4595-bb11-103c16f011ff",
+							"fieldName": "oBarFooter",
+							"fieldParent": "6c5de202-1c18-45d3-c547-a20a335e2a47",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFooter",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "f3bdf0a7-5f9a-4178-c075-8257f25b5360",
+									"fieldName": "Left1",
+									"fieldParent": "c24b2245-b1c5-4595-bb11-103c16f011ff",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentLeft",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "7bc17789-6061-4558-fe3a-fdd20a1b1c0f",
+											"fieldName": "Button",
+											"fieldParent": "f3bdf0a7-5f9a-4178-c075-8257f25b5360",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://refresh",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/Button/press.script",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
 						}
 					]
 				},
@@ -426,8 +495,8 @@
 						{
 							"attribute": "navButtonPress",
 							"grouping": "Events",
-							"value": "App.to(Page1);",
-							"script": "App.to(Page1);",
+							"value": "Anonymous Function",
+							"script": "file://event/sap.m.Page/Page/navButtonPress.js",
 							"language": "javascript",
 							"translation": []
 						}
@@ -651,8 +720,9 @@
 								{
 									"attribute": "ajaxSuccess",
 									"grouping": "Events",
-									"value": "BusyDialog.close();",
+									"value": "Anonymous Function",
 									"script": "BusyDialog.close();",
+									"language": "javascript",
 									"translation": []
 								}
 							],
@@ -723,7 +793,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.05.16.1413",
+	"ver": "24.05.17.1256",
 	"application": "interactive_cockpit",
 	"title": "",
 	"description": "",

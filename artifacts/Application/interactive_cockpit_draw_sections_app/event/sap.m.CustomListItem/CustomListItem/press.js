@@ -1,5 +1,9 @@
-const context = oEvent.oSource.getBindingContext();  
+var data1 = "";
+EDI.setData(data1);
+const context = oEvent.oSource.getBindingContext();
 var sectionID = context.getProperty("id");
+var title = context.getProperty("Title");
+TitleName.setText(title);
 const data = context.getObject();
 var id = data.UUID;
 URL = data.Image_URL;
@@ -17,13 +21,14 @@ DeleteMode = false;
 DrawMode = false;
 canvas.style.cursor = "pointer";
 BusyDialog.open();
-
 HBox4.setBlocked(false);
 HBox3.setVisible(false);
 App.to(Page);
 var options = {
     parameters: {
-        "where": JSON.stringify({"belongsTo":id})
-    }
+        where: JSON.stringify({ belongsTo: id }),
+    },
 };
 apiRestAPIGetSections(options);
+TitleHeader.setVisible(false);
+TitleName.setVisible(true);
